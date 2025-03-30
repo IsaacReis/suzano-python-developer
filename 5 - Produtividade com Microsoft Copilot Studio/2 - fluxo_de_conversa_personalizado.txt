@@ -1,0 +1,61 @@
+O desafio a seguir consistiu em criar um Copiloto com Fluxo de Conversa Personalizado.
+Abaixo foram listados como um resumo em tópicos, tudo o que foi realizado e aprendido durante o passo a passo, assim como pontos de relevância.
+
+- Criar Copilot em Branco.
+    - Acessar página.
+    - Clicar no botão para criar um novo agente.
+        - Recomendável manter o idioma como "inglês" na etapa seguinte.
+    - Setar nome do agente.
+    - Fazer as mudanças necessárias de ícone, descrição e instruções.
+        - A diferença de instruções para descrição é que no campo de instruções, se deve colocar o prompt que irá ditar os comportamentos do agente.
+        - As instruções devem conter o máximo de detalhes possível. Algumas das informações interessantes são:
+            - Tom (formal ou informal).
+            - Idioma.
+            - Tipos de informações que deve retornar.
+    - Em "Avançado", definir a solução cabível ao agente que está sendo criado.
+    - Clicar no botão para criar o agente.
+
+- Customizar um Tópico.
+    - Entrar na aba "Tópicos".
+    - Clicar em "Adicionar um Tópico".
+        - Para este exemplo, adicionamos um tópico "em branco".
+    - Editar as frases de gatilho.
+    - Adicionar uma nova ação, usando "Respostas Generativas".
+    - Passar o input para a ação.
+        - Para este exemplo será usado o "Activity.Text", que é a última mensagem que o usuário enviou.
+        - É possível ainda editar um "Data Source" para a ação de Respostas Generativas.
+    - Ao final, adicionamos uma nova mensagem para encerrar o tópico apenas para saber qual tópico está sendo encerrado.
+    - Clicar para salvar o tópico.
+        - Recomendável sempre reiniciar a conversa após a criação de um novo tópico para se ter certeza de que a última versão está sendo utilizada.
+
+- Personalizar uma Mensagem de Erro de Tópico.
+    - Primeira opção possível:
+        - Acessar o agente.
+        - Entrar na aba "Tópicos".
+        - Entrar em "Conversational Boosting".
+            - Isso é uma parte onde, sempre que o agente não conseguir compreender a mensagem, ele entrará neste tópico.
+            - Ele usa uma resposta generativa. Caso a resposta não estiver em branco, ele finaliza. Caso contrário, ele entra na outra parte.
+            - Nesta parte é possível tentar configurar um melhor cenário para a situação.
+    - Segunda opção possível:
+        - Acessar o agente.
+        - Entrar na aba "Tópicos".
+        - Entrar em "Fallback".
+            - Uma parte onde tudo o que acontecer de falha irá cair dentro deste tópico.
+    - Para tentar personalizar, podemos desmarcar a opção que permite a IA usar seu próprio conhecimento como dado.
+    - Após isso, adicionar uma mensagem no tópico, usando variáveis conforme ensinadas nas aulas anteriorer.
+    - Dessa forma a sua mensagem personalizada será utilizada ao invés da IA generativa.
+        - É possível adicionar outros nós além das mensagens, da mesma forma que ensinado nas outras aulas.
+
+- Aumentar/Diminuir a Qualidade da Resposta com GenAI.
+    - É possível entrar nos Data Sources conforme mencionado anteriormente e selecionar apenas uma ou mais bases de conhecimento que fazem sentido para o agente.
+    - É possível desabilitar a opção que permite a IA usar seu próprio conhecimento como dado, como visto anteriormente.
+        - Importante destacar que a base de conhecimento neste caso é a do GPT.
+    - É possível, dentro do próprio agente, criar outro prompt.
+        - Esse prompt pode ser usado para limitar a resposta, adicionando por exemplo a pergunta do usuário como variável e pedindo para que o prompt tenha a pergunta como base.
+    - É possível customizar o nível de moderação de conteúdo, que vem como "Alta" por padrão.
+        - Dessa forma é possível fazer com que a resposta seja mais criativa ou menos criativa e mais concisa.
+    - Outro caminho está dentro de Opções.
+        - Acessar "IA Generativa".
+        - Dentro deste campo é possível habilitar a IA generativa como discutido previamente.
+        - Também é possível ajustar o nível de moderação de conteúdo.
+        - Este caminho não altera as opções de um agente apenas, mas de todo o ambiente.
