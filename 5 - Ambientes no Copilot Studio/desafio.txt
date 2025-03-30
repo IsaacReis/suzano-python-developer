@@ -1,0 +1,10 @@
+Neste desafio foram ensinadas 3 formas de criar um Copilot.
+
+    1 - Baseado em um modelo pré-definido do Copilot Studio.
+        - Na tela inicial tem uma sessão que já apresenta alguns modelos para começar. É possível iniciar a criação através dali.
+    2 - Baseado em uma descrição com IA.
+        - Na tela inicial aparece uma caixa de texto onde é possível escrever um prompt para que o Copilot crie um agente baseado na mensagem.
+    3 - Criando um agente em branco.
+        - Na tela inicial, clicando em Criar. Após isso as informações são apresentadas para inserir nome, ambiente, tópicos e fluxos.
+
+Em todos os métodos, é possível editar o agente como quiser.
