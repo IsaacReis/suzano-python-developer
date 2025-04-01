@@ -1,0 +1,32 @@
+# Análise de Sentimentos com Azure Language Studio
+
+## 📌 Descrição do Projeto
+
+Este repositório foi criado com o objetivo de explorar e experimentar os recursos de **Análise de Sentimentos e Opiniões
+(Sentiment and Opinion Mining)** oferecidos pelo **Azure Language Studio**.
+
+Utilizei três sentenças diferentes para verificar como a IA da Microsoft interpreta emoções, 
+opiniões e contextos diversos — como reclamações diretas, linguagem poética e textos filosóficos.
+
+As sentenças estão construídas abaixo:
+
+1 - Mas que droga! Fui almoçar em um restaurante italiano altamente avaliado pelo aplicativo! 
+    Chegando lá, a comida estava ruim, não tinha nenhum sabor, o atendimento era horrível, e no final,
+    ainda esqueci a carteira no restaurante!
+
+2 - Sofrer por você
+    Viver, lutar
+    De joelhos hesitar
+    Por não te desejar
+    Passos largos em direção
+    Desejos por trás de desejos
+    Por tanto te odiar
+    E por isso tentar
+    Por isso trabalhar, por isso roubar
+    Por mais forte que seja
+    Você está aqui, dinheiro
+
+3 - A música, em si, não é tão significativa para o nosso mundo interior, tão profundamente tocante, 
+    que possa valer como linguagem imediata do sentimento; mas sua ligação ancestral com a poesia 
+    pôs tanto simbolismo no movimento rítmico, na intensidade ou fraqueza do tom, que hoje imaginamos 
+    que ela fale diretamente ao nosso íntimo e que dele parta.
